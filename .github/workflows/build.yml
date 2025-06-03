@@ -34,6 +34,6 @@ jobs:
       - name: Testing on OS (${{ matrix.os }}) with Node.js (version ${{ matrix.node-version }}) attempt ${{ matrix.attempt }}
         run: |
           echo "Run attempt: ${{ matrix.attempt }}"
-          BROWSER=chrome npm test
+          SELENIUM_BROWSER=chrome npm test
 
     continue-on-error: false
